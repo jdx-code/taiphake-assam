@@ -55,8 +55,7 @@ const Home = () => {
   return (
     <div id="main"> 
         <Hero />  
-        <FeatureSectionWithLeftText aboutInfo={aboutTaiphake} features={features} />   
-        <Try aboutInfo={aboutNamphake} features={features} />
+        <FeatureSectionWithLeftText aboutInfo={aboutTaiphake} features={features} />           
         <FeatureSectionWithRightText aboutInfo={aboutNamphake}/>
         <Footer />
     </div>
