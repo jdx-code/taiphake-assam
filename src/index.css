@@ -7,18 +7,41 @@ body{
     font-family: 'Noto Sans', sans-serif;
 }
 
-#main{    
-    background: linear-gradient(rgba(37, 5, 49, 0.7), rgba(60, 14, 78, 0.7)), url(assets/mainbg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;    
+#navbar {
+    position: absolute;
+    width: 100%;
+    z-index: 1; /* Ensure the Navbar is above the Hero section */
+    /* background: #191a2b; Remove the background color */
+    background: rgba(25, 26, 43, 0.2); /* Set a transparent background with some opacity */
+}
+
+#main{
+  background-color: #fff;
 }
 .footerClass ul li, p{
     font-weight: normal;
 }
 
-#navbar{
-    background: #191a2b;
-}
+.slider-item {
+    position: relative;    
+    
+    text-align: center;
+    height: 650px; /* Adjust the height as needed */
+  }
   
+  .slider-item img {    
+    width: 100%;
+    height: 100%;
+    object-fit:cover; /* Maintain aspect ratio and cover the container */
+  }
+  
+  .slider-text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+  }
