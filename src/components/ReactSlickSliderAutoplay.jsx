@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Image01 from '../assets/hero-01.jpg';
-import Image02 from '../assets/hero-02.jpg';
-import Image03 from '../assets/hero-03.jpg';
-import Image04 from '../assets/hero-04.jpg';
+import Image01 from '/hero/hero-01.jpg';
+import Image02 from '/hero/hero-02.jpg';
+import Image03 from '/hero/hero-03.jpg';
+import Image04 from '/hero/hero-04.jpg';
 
 export default class ReactSlickSliderAutoPlay extends Component {
   render() {
@@ -49,7 +49,7 @@ export default class ReactSlickSliderAutoPlay extends Component {
               </div>
             </div>
           </div>
-          {/* <div>
+          <div>
             <div className="slider-item">
               <img src={Image03} alt="Image 3" />
               <div className="slider-text">Text for Image 3</div>
@@ -60,7 +60,7 @@ export default class ReactSlickSliderAutoPlay extends Component {
               <img src={Image04} alt="Image 4" />
               <div className="slider-text">Text for Image 4</div>
             </div>
-          </div> */}
+          </div>
         </Slider>
       </div>
     );

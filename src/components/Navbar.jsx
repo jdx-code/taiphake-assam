@@ -1,7 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, Fragment } from "react";
 import { NavLink } from "react-router-dom";
+import { Menu, Transition } from '@headlessui/react'
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai';
 import Logo from '../assets/companyLogo.png'
+
+function classNames(...classes) {
+    return classes.filter(Boolean).join(' ')
+}
 
 const Navbar = () =>{
 
@@ -32,19 +37,61 @@ const Navbar = () =>{
                         </NavLink>
                     </li>
                     <li className="p-4">
-                        <NavLink                         
-                            to="/about"                        
-                            className={({ isActive }) => isActive ? activeLink : ''}
-                        >
-                            About
-                        </NavLink>
+                        <Menu as="div" className="relative inline-block text-left">
+                            <div>
+                                <Menu.Button>
+                                    About                                
+                                </Menu.Button>
+                            </div>
+
+                            <Transition
+                                as={Fragment}
+                                enter="transition ease-out duration-100"
+                                enterFrom="transform opacity-0 scale-95"
+                                enterTo="transform opacity-100 scale-100"
+                                leave="transition ease-in duration-75"
+                                leaveFrom="transform opacity-100 scale-100"
+                                leaveTo="transform opacity-0 scale-95"
+                            >
+                                <Menu.Items className="absolute left-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                                <div className="py-1">
+                                    <Menu.Item>
+                                    {({ active }) => (
+                                        <a
+                                        href="/about"
+                                        className={classNames(
+                                            active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                            'block px-4 py-2 text-sm'
+                                        )}
+                                        >
+                                        Taiphake Community
+                                        </a>
+                                    )}
+                                    </Menu.Item>
+                                    <Menu.Item>
+                                    {({ active }) => (
+                                        <a
+                                        href="/about"
+                                        className={classNames(
+                                            active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                            'block px-4 py-2 text-sm'
+                                        )}
+                                        >
+                                        Nam-Phake Village
+                                        </a>
+                                    )}
+                                    </Menu.Item>
+                                </div>
+                                </Menu.Items>
+                            </Transition>
+                        </Menu>
                     </li>
                     <li className="p-4">
                         <NavLink                         
                             to="/services"                        
                             className={({ isActive }) => isActive ? activeLink : ''}
                         >
-                            Services
+                            What to see
                         </NavLink>
                     </li>
                     <li className="p-4">
@@ -52,7 +99,7 @@ const Navbar = () =>{
                             to="/career"                        
                             className={({ isActive }) => isActive ? activeLink : ''}
                         >
-                            Career
+                            Literature
                         </NavLink>
                     </li>                
                     <li className="p-4">
@@ -80,19 +127,61 @@ const Navbar = () =>{
                             </NavLink>
                         </li>
                         <li className="p-4 border-b border-gray-600">
-                            <NavLink
-                                to="/about"
-                                onClick={handleNav}
+                        <Menu as="div" className="relative inline-block text-left">
+                            <div>
+                                <Menu.Button className='uppercase'>
+                                    About                                
+                                </Menu.Button>
+                            </div>
+
+                            <Transition
+                                as={Fragment}
+                                enter="transition ease-out duration-100"
+                                enterFrom="transform opacity-0 scale-95"
+                                enterTo="transform opacity-100 scale-100"
+                                leave="transition ease-in duration-75"
+                                leaveFrom="transform opacity-100 scale-100"
+                                leaveTo="transform opacity-0 scale-95"
                             >
-                                About
-                            </NavLink>
+                                <Menu.Items className="absolute -left-4 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                                <div className="py-1">
+                                    <Menu.Item>
+                                    {({ active }) => (
+                                        <a
+                                        href="#"
+                                        className={classNames(
+                                            active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                            'block px-4 py-2 text-sm'
+                                        )}
+                                        >
+                                        Taiphake Community
+                                        </a>
+                                    )}
+                                    </Menu.Item>
+                                    <Menu.Item>
+                                    {({ active }) => (
+                                        <a
+                                        href="#"
+                                        className={classNames(
+                                            active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                            'block px-4 py-2 text-sm'
+                                        )}
+                                        >
+                                        Nam-Phake Village
+                                        </a>
+                                    )}
+                                    </Menu.Item>
+                                </div>
+                                </Menu.Items>
+                            </Transition>
+                        </Menu>
                         </li>
                         <li className="p-4 border-b border-gray-600">
                             <NavLink
                                 to="/services"
                                 onClick={handleNav}
                             >
-                                Services
+                                What to see
                             </NavLink>
                         </li>
                         <li className="p-4 border-b border-gray-600">
@@ -100,7 +189,7 @@ const Navbar = () =>{
                                 to="/career"
                                 onClick={handleNav}
                             >
-                                Career
+                                Literature
                             </NavLink>
                         </li>
                         <li className="p-4">
