@@ -75,7 +75,7 @@ export const namphakeFeatures = [
               name: 'Moo Kham Sa Oui',
               description:
                 'One of the most popular folk songs of Tai Phakes are Sa oui. These songs related with nature, agricultural activitis, festivals, Romance and love. During preparation of a festival boys and girls perform this type of songs, in agriculture field, during collect some vegetable from forest boys and girls perform Sa Oui songs. Sa oui songs mainly reflect romance and love of young man and women. They reflect their pursuit of the happiness of love.Some time artists perform in other subject like myth, legend, historic matter also.',            
-                // icon: CloudArrowUpIcon,
+              // icon: CloudArrowUpIcon,
             },
             {
               name: 'Moo Kham Khe khyang',
@@ -90,17 +90,17 @@ export const namphakeFeatures = [
               // icon: ArrowPathIcon,
             },
             {
-              name: 'Moo Kham Ae no',
+              name: 'Khow Mo (Woo Pem Cham Loo)',
               description:
-                'Ae no song such as story telling songs. Man or woman can perform in any occation. Artists narrated some story such as description of natural beauty, religious matter,memorise the past, chilhood time, some legendary story, mythology, agricultural activities, religious occassion etc.',
+                'These types of songs are generally sung by the women narrating legendary stories,mythological and historical stories etc. Woo pem Cham Loo is a popular mythological love story of a pair of lover. These types of songs are of meeting in the moonlight and talking love on the mountainside, songs of loving, reunion, leaving and songs of missing one another, joys and sorrows of lovers etc.',
               // icon: FingerPrintIcon,
-            },
-            {
-              name: 'Moo Kham Yon Kong',
-              description:
-                'During the festival time boys (some time girl also) perform dance and songs in public places with traditinal instrument. They go to individual household also. During perform dances some they sing such type og songs. Through performence the song boys request from public and individual household to donate some money and other thing etc. During the dance performances some of them song this type of song. Through the songs boys request the public and individual household to offer some money and other things. These type of songs called Kham Yon Kong.',
-              // icon: ArrowPathIcon,
-            },
+            },            
+            // {
+            //   name: 'Moo Kham Yon Kong',
+            //   description:
+            //     'During the festival time boys (some time girl also) perform dance and songs in public places with traditinal instrument. They go to individual household also. During perform dances some they sing such type og songs. Through performence the song boys request from public and individual household to donate some money and other thing etc. During the dance performances some of them song this type of song. Through the songs boys request the public and individual household to offer some money and other things. These type of songs called Kham Yon Kong.',
+            //   // icon: ArrowPathIcon,
+            // },
             {
               name: 'Moo Kham Kamathan',
               description:
@@ -120,11 +120,12 @@ export const namphakeFeatures = [
               // icon: FingerPrintIcon,
             },
             {
-              name: 'Khow Mo (Woo Pem Cham Loo)',
+              name: 'Moo Kham Ae no',
               description:
-                'These types of songs are generally sung by the women narrating legendary stories,mythological and historical stories etc. Woo pem Cham Loo is a popular mythological love story of a pair of lover. These types of songs are of meeting in the moonlight and talking love on the mountainside, songs of loving, reunion, leaving and songs of missing one another, joys and sorrows of lovers etc.',
+                'Ae no song such as story telling songs. Man or woman can perform in any occation. Artists narrated some story such as description of natural beauty, religious matter,memorise the past, chilhood time, some legendary story, mythology, agricultural activities, religious occassion etc.',
               // icon: FingerPrintIcon,
             },
+            
       ]
     },  
   ]
