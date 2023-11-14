@@ -58,7 +58,7 @@ const Navbar = () =>{
                                     <Menu.Item>
                                     {({ active }) => (
                                         <a
-                                        href="/about"
+                                        href="/about-taiphake"
                                         className={classNames(
                                             active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                                             'block px-4 py-2 text-sm'
@@ -71,7 +71,7 @@ const Navbar = () =>{
                                     <Menu.Item>
                                     {({ active }) => (
                                         <a
-                                        href="/about"
+                                        href="/about-namphake"
                                         className={classNames(
                                             active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                                             'block px-4 py-2 text-sm'
