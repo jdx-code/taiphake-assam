@@ -1,6 +1,4 @@
-import AboutImg from '../assets/about/taiphake-traditional.jpg'
-
-const FeatureSectionWithLeftText = ( { aboutInfo, features } ) => {
+const FeatureSectionWithLeftText = ( { aboutInfo } ) => {
   return (
     <div className="overflow-hidden bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -12,11 +10,23 @@ const FeatureSectionWithLeftText = ( { aboutInfo, features } ) => {
               <p className="mt-6 text-sm sm:text-md text-justify leading-8 text-gray-600">
                 {aboutInfo[0].description}
               </p>
+              {aboutInfo[0].basicInfoLists ? 
+              <div className="mt-2 border-t border-gray-100">
+                    {aboutInfo[0].basicInfoLists.map((info, index) => (
+                        <dl className="divide-y divide-gray-100" key={index}>
+                            <div className="px-4 py-2 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                            <dt className="text-sm font-medium leading-6 text-gray-900">{info.key}</dt>
+                            <dd className="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">{info.value}</dd>
+                            </div>
+                        </dl>
+                    ))}
+              </div>
+              : '' }
               <button className='my-4 w-[25%] h-12 rounded-md bg-gray-900 text-white'>Read more</button>
             </div>
           </div>
           <img
-            src={AboutImg}
+            src={aboutInfo[0].defaultImg}
             alt="Product screenshot"
             className="w-[40rem] sm:w-[57rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 md:-ml-4 lg:-ml-0"
             width={2432}
