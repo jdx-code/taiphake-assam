@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import AboutTaiphake from './pages/AboutTaiphake';
 import AboutNamphake from './pages/AboutNamphake';
+import WhatToSee from './pages/WhatToSee';
 
 initFontAwesome();
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />     
         <Route path="/about-taiphake" element={<AboutTaiphake />} />                 
         <Route path="/about-namphake" element={<AboutNamphake />} />                 
+        <Route path="/what-to-see" element={<WhatToSee />} />  
       </Routes> 
     </>
   )
