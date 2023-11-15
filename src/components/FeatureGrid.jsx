@@ -1,4 +1,6 @@
-import { CheckCircleIcon } from "@heroicons/react/outline";
+// import { CheckCircleIcon } from "@heroicons/react/outline";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 
 const FeatureGrid = ( {features} ) => {
   return (
@@ -19,7 +21,8 @@ const FeatureGrid = ( {features} ) => {
               <div key={feature.name} className="relative pl-16">
                 <dt className="text-base font-semibold leading-7 text-gray-900">
                   <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg">
-                    <CheckCircleIcon className='text-gray-400'/>  
+                    {/* <CheckCircleIcon className='text-gray-400'/>   */}
+                    <FontAwesomeIcon icon={faCheckCircle} style={{ color: '#c0e' }}/>
                   </div>
                   {feature.name}
                 </dt>
