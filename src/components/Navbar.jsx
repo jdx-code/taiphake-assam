@@ -96,7 +96,7 @@ const Navbar = () =>{
                     </li>
                     <li className="p-4">
                         <NavLink                         
-                            to="/career"                        
+                            to="/literature"                        
                             className={({ isActive }) => isActive ? activeLink : ''}
                         >
                             Literature
@@ -186,7 +186,7 @@ const Navbar = () =>{
                         </li>
                         <li className="p-4 border-b border-gray-600">
                             <NavLink
-                                to="/career"
+                                to="/literature"
                                 onClick={handleNav}
                             >
                                 Literature

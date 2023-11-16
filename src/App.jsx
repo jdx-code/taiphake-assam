@@ -6,6 +6,9 @@ import Home from './pages/Home'
 import AboutTaiphake from './pages/AboutTaiphake';
 import AboutNamphake from './pages/AboutNamphake';
 import WhatToSee from './pages/WhatToSee';
+import Literature from './pages/Literature';
+import Contact from './pages/Contact'
+
 
 initFontAwesome();
 
@@ -19,6 +22,8 @@ function App() {
         <Route path="/about-taiphake" element={<AboutTaiphake />} />                 
         <Route path="/about-namphake" element={<AboutNamphake />} />                 
         <Route path="/what-to-see" element={<WhatToSee />} />  
+        <Route path="/literature" element={<Literature />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes> 
     </>
   )
