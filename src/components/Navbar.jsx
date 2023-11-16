@@ -88,7 +88,7 @@ const Navbar = () =>{
                     </li>
                     <li className="p-4">
                         <NavLink                         
-                            to="/services"                        
+                            to="/what-to-see"                        
                             className={({ isActive }) => isActive ? activeLink : ''}
                         >
                             What to see
@@ -96,7 +96,7 @@ const Navbar = () =>{
                     </li>
                     <li className="p-4">
                         <NavLink                         
-                            to="/career"                        
+                            to="/literature"                        
                             className={({ isActive }) => isActive ? activeLink : ''}
                         >
                             Literature
@@ -147,28 +147,28 @@ const Navbar = () =>{
                                 <div className="py-1">
                                     <Menu.Item>
                                     {({ active }) => (
-                                        <a
-                                        href="#"
+                                        <NavLink                         
+                                        to="/about-taiphake"                                          
                                         className={classNames(
                                             active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                                             'block px-4 py-2 text-sm'
                                         )}
                                         >
                                         Taiphake Community
-                                        </a>
+                                        </NavLink>
                                     )}
                                     </Menu.Item>
                                     <Menu.Item>
                                     {({ active }) => (
-                                        <a
-                                        href="#"
+                                        <NavLink
+                                        to="/about-namphake"
                                         className={classNames(
                                             active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                                             'block px-4 py-2 text-sm'
                                         )}
                                         >
                                         Nam-Phake Village
-                                        </a>
+                                        </NavLink>
                                     )}
                                     </Menu.Item>
                                 </div>
@@ -178,7 +178,7 @@ const Navbar = () =>{
                         </li>
                         <li className="p-4 border-b border-gray-600">
                             <NavLink
-                                to="/services"
+                                to="/what-to-see"
                                 onClick={handleNav}
                             >
                                 What to see
@@ -186,7 +186,7 @@ const Navbar = () =>{
                         </li>
                         <li className="p-4 border-b border-gray-600">
                             <NavLink
-                                to="/career"
+                                to="/literature"
                                 onClick={handleNav}
                             >
                                 Literature

@@ -33,6 +33,7 @@ export const aboutNamphake = [
 
 export const taiphakeFeatures = [
     {
+        heading: 'Know more..',
         title : 'The Tai phake people are jolly and lovers faies and festivals and Tai Phakes are not expectional. They are also a lively, marry making people. During the festivals the Phakes resort to merry making and fun with lively songs.',
         content: [
             { name: 'Language', description: 'Tai Phakes speak in Tai language, a distinctive dialect of the Tibeto-Chinese language family. The sounds are distinctively tonal and monosyllabic, hence spoken with a melodious intonation. Linguists have corroborated that the language contains six tones in addition to close and open tones, without any tonal mark in their script.' }, 
@@ -51,6 +52,7 @@ export const taiphakeFeatures = [
 
 export const namphakeFeatures = [    
     {
+        heading: 'Know more..',
         title: 'The Namphake village is a potential tourism destination attracting cultural- and eco-tourists because of its rich cultural heritage and unique lifestyle and treasures of its people.',
         content: [
             { name: 'Buddhist Monastery', description: 'Built in AD 1850, the Buddhist Monastery at Namphake village is the largest in Assam. Construction of the present structure started in 198l.' }, 
@@ -128,4 +130,27 @@ export const namphakeFeatures = [
             
       ]
     },  
+  ]
+
+
+  export const whatToSee = [    
+    {
+        heading: 'Tourism at Namphake',
+        title: 'The Namphake village is a potential tourism destination attracting cultural- and eco-tourists because of its rich cultural heritage and unique lifestyle and treasures of its people.',
+        content: [
+            { name: 'Festivals and Rituals', description: 'The main festivals of the Buddhist Tai Phakes are Poy Sang Ken, Mai Ka Sum Fai, Poi Ok Wa, Poy Jayanti, Poy Kham Chang, Poy Leng (special funeral for monks), Poy Kanta (a religious festival held each year at different Buddhist Monasteries of the Northeast during November), Poy Noun Chi (a religious festival held during March on a full moon night) and many others.' },            
+            { name: 'Buddhist Monastery', description: 'There is a collection of many ancient Buddhist religio-cultural treasure, artifacts and articles in this monastery. Moreover, within its campus, we find the Masalinda Lake, pagodas (or Cong Moo), Dhamma Cheti – religious building to house ancient scrolls, Kithing – a structure to hold religious ceremonies, Kyang Fra – a religious building where statues of The Buddha are brought during special occasions.' }, 
+            { name: 'Cultural Heritage', description: 'The Tai Phake people living in the Namphake village use the Tai language as a mode expression. People wear traditional dresses at all times. The men folk wear a multicolored dress known as ‘Faa’. Married women wear the ‘Nangwat’, a wrap-dress worn over the breasts. Young girls wear ‘Faa Fouk’, a sheet of pure white cloth, intricately embroidered at the edges. Elders, both men and women wear turbans, called ‘Faa Ho”.' },
+            { name: 'Housing', description: 'The Tai Phakes live in houses built on stilts called Houn Hang. These homes are built after observation of various traditional rites and rituals to be bestowed with blessings and prosperity of the family and household. The house, which is built about 6 feet above the ground, have separate guest room, dining room (kan nock), bedroom (kan noon), kitchen (houn oun) and prayer room (khock tang chom).' },            
+          ],
+        images: [                                    
+            { img : '/whatToSee/1.jpg'},
+            { img : '/whatToSee/2.jpg'},
+            { img : '/whatToSee/6.jpg'},
+            { img : '/whatToSee/3.jpg'},
+            { img : '/whatToSee/4.jpg'},                        
+            { img : '/whatToSee/5.jpg'},
+            
+        ]
+    }
   ]
