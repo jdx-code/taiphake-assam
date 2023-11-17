@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from "react";
+import React, { useState, Fragment, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { Menu, Transition } from '@headlessui/react'
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai';
@@ -11,16 +11,23 @@ function classNames(...classes) {
 const Navbar = () =>{
 
     const [nav, setNav] = useState(false);
+    const [aboutActive, setAboutActive] = useState(false);
 
-    const activeLink = "text-blue-200"
+    const activeLink = "text-green-500 border-b-4 border-white p-2"
     
     const handleNav = () => {
         setNav(!nav)
     }
 
+    useEffect(() => {
+        // Set aboutActive to true when either sub-link is active
+        const aboutIsActive = window.location.pathname === "/about-taiphake" || window.location.pathname === "/about-namphake";
+        setAboutActive(aboutIsActive);
+      }, []);
+
     return(
         <div>
-            <div id="navbar" className="flex justify-between items-center h-24 w-full mx-auto px-4 text-white">                
+            <div id="navbar" className="flex justify-between items-center h-24 w-full mx-auto px-4">                
                 <div>
                     <NavLink to="/">
                         <img className="w-[120px] my-8 sm:w-[100px] md:w-[100px] items-start" src={Logo} alt="/" />
@@ -31,7 +38,7 @@ const Navbar = () =>{
                     <li className="p-4">
                         <NavLink                         
                             to="/"    
-                            className={({ isActive }) => isActive ? activeLink : ''}                    
+                            className={`navbar-link ${({ isActive }) => isActive ? activeLink : ''}`}   
                         >
                             Home
                         </NavLink>
@@ -39,7 +46,9 @@ const Navbar = () =>{
                     <li className="p-4">
                         <Menu as="div" className="relative inline-block text-left">
                             <div>
-                                <Menu.Button>
+                                <Menu.Button
+                                    className={`navbar-link`}
+                                >
                                     About                                
                                 </Menu.Button>
                             </div>
@@ -53,14 +62,14 @@ const Navbar = () =>{
                                 leaveFrom="transform opacity-100 scale-100"
                                 leaveTo="transform opacity-0 scale-95"
                             >
-                                <Menu.Items className="absolute left-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                                <Menu.Items className="menuItems absolute left-0 z-10 mt-2 w-56 origin-top-right rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                                 <div className="py-1">
-                                    <Menu.Item>
+                                    <Menu.Item>                                    
                                     {({ active }) => (
                                         <NavLink                         
                                         to="/about-taiphake"                                          
                                         className={classNames(
-                                            active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                            active ? 'bg-gray-100 text-green-900' : 'text-green-700',
                                             'block px-4 py-2 text-sm'
                                         )}
                                         >
@@ -73,7 +82,7 @@ const Navbar = () =>{
                                         <NavLink
                                         to="/about-namphake"
                                         className={classNames(
-                                            active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                            active ? 'bg-gray-100 text-green-900' : 'text-green-700',
                                             'block px-4 py-2 text-sm'
                                         )}
                                         >
@@ -88,8 +97,8 @@ const Navbar = () =>{
                     </li>
                     <li className="p-4">
                         <NavLink                         
-                            to="/what-to-see"                        
-                            className={({ isActive }) => isActive ? activeLink : ''}
+                            to="/what-to-see"                                                    
+                            className={`navbar-link ${({ isActive }) => isActive ? activeLink : ''}`}
                         >
                             What to see
                         </NavLink>
@@ -97,7 +106,7 @@ const Navbar = () =>{
                     <li className="p-4">
                         <NavLink                         
                             to="/literature"                        
-                            className={({ isActive }) => isActive ? activeLink : ''}
+                            className={`navbar-link ${({ isActive }) => isActive ? activeLink : ''}`}
                         >
                             Literature
                         </NavLink>
@@ -105,7 +114,7 @@ const Navbar = () =>{
                     <li className="p-4">
                         <NavLink
                             to="/contact"                        
-                            className={({ isActive }) => isActive ? activeLink : ''}
+                            className={`navbar-link ${({ isActive }) => isActive ? activeLink : ''}`}
                         >
                             Contact
                         </NavLink>

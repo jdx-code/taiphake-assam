@@ -76,58 +76,43 @@ export const namphakeFeatures = [
           {
               name: 'Moo Kham Sa Oui',
               description:
-                'One of the most popular folk songs of Tai Phakes are Sa oui. These songs related with nature, agricultural activitis, festivals, Romance and love. During preparation of a festival boys and girls perform this type of songs, in agriculture field, during collect some vegetable from forest boys and girls perform Sa Oui songs. Sa oui songs mainly reflect romance and love of young man and women. They reflect their pursuit of the happiness of love.Some time artists perform in other subject like myth, legend, historic matter also.',            
-              // icon: CloudArrowUpIcon,
+                'One of the most popular folk songs of Tai Phakes are Sa oui. These songs related with nature, agricultural activitis, festivals, Romance and love. During preparation of a festival boys and girls perform this type of songs, in agriculture field, during collect some vegetable from forest boys and girls perform Sa Oui songs. Sa oui songs mainly reflect romance and love of young man and women. They reflect their pursuit of the happiness of love.Some time artists perform in other subject like myth, legend, historic matter also.',                          
             },
             {
               name: 'Moo Kham Khe khyang',
               description:
-                'Khe khyang are a long narrative song. It is one of the most popular folk songs in TaiPhake community. These kind of songs describe the past happenings in the social life of Phakes. Mythological and historical story also narrated in these songs. The content is main importance, and rhythm does not count much. The rhythm goes to like – ABBC, CDDE, EFFG, GHHI…etc. these song perform by group of artists. Maim artist sing in single voice that after other artist follow him as chorus.',
-              // icon: LockClosedIcon,
+                'Khe khyang are a long narrative song. It is one of the most popular folk songs in TaiPhake community. These kind of songs describe the past happenings in the social life of Phakes. Mythological and historical story also narrated in these songs. The content is main importance, and rhythm does not count much. The rhythm goes to like – ABBC, CDDE, EFFG, GHHI…etc. these song perform by group of artists. Maim artist sing in single voice that after other artist follow him as chorus.',              
             },
             {
               name: 'Moo Kham Soi Yoi',
               description:
-                'One of the popular songs of Taiphake are Soi Yoi. These are traditional folk songs which describe any incident happenned ane’s life time or the daily routine of any individual,such as a woman sing during dehusking of the paddy that - I am dehusking the paddy since the dawn. I am through the whole body. These type of songs can perform in any occassion and any ages of artists.',
-              // icon: ArrowPathIcon,
+                'One of the popular songs of Taiphake are Soi Yoi. These are traditional folk songs which describe any incident happenned ane’s life time or the daily routine of any individual,such as a woman sing during dehusking of the paddy that - I am dehusking the paddy since the dawn. I am through the whole body. These type of songs can perform in any occassion and any ages of artists.',              
             },
             {
               name: 'Khow Mo (Woo Pem Cham Loo)',
               description:
-                'These types of songs are generally sung by the women narrating legendary stories,mythological and historical stories etc. Woo pem Cham Loo is a popular mythological love story of a pair of lover. These types of songs are of meeting in the moonlight and talking love on the mountainside, songs of loving, reunion, leaving and songs of missing one another, joys and sorrows of lovers etc.',
-              // icon: FingerPrintIcon,
-            },            
-            // {
-            //   name: 'Moo Kham Yon Kong',
-            //   description:
-            //     'During the festival time boys (some time girl also) perform dance and songs in public places with traditinal instrument. They go to individual household also. During perform dances some they sing such type og songs. Through performence the song boys request from public and individual household to donate some money and other thing etc. During the dance performances some of them song this type of song. Through the songs boys request the public and individual household to offer some money and other things. These type of songs called Kham Yon Kong.',
-            //   // icon: ArrowPathIcon,
-            // },
+                'These types of songs are generally sung by the women narrating legendary stories,mythological and historical stories etc. Woo pem Cham Loo is a popular mythological love story of a pair of lover. These types of songs are of meeting in the moonlight and talking love on the mountainside, songs of loving, reunion, leaving and songs of missing one another, joys and sorrows of lovers etc.',             
+            },
             {
               name: 'Moo Kham Kamathan',
               description:
-                'These are long narrative songs. Anybody can sing these types of songs, narrative their whole life from birth to death. Their joy and happiness, mortality of human body, value of their existance in this world etc.',
-              // icon: FingerPrintIcon,
+                'These are long narrative songs. Anybody can sing these types of songs, narrative their whole life from birth to death. Their joy and happiness, mortality of human body, value of their existance in this world etc.',              
             },
             {
               name: 'Moo Kham Si Khu',
               description:
-                'In any religious occasion these kind of songs are performed by the villagers. These are some kind of prayer. In these songs they prayto God for well being of their family,villagers, in paddy field ang agricultural activities.',
-              // icon: ArrowPathIcon,
+                'In any religious occasion these kind of songs are performed by the villagers. These are some kind of prayer. In these songs they prayto God for well being of their family,villagers, in paddy field ang agricultural activities.',              
             },
             {
               name: 'Moo Kham Yon Chow (Marriage songs)',
               description:
-                'These are marriage releted songs. People perform these songs during various occasion on marriage. People came from groom side perform at bride house and after the finished the occasion when bride reach the groom house some senior person perform narrate before the bride and groom.',
-              // icon: FingerPrintIcon,
+                'These are marriage releted songs. People perform these songs during various occasion on marriage. People came from groom side perform at bride house and after the finished the occasion when bride reach the groom house some senior person perform narrate before the bride and groom.',              
             },
             {
               name: 'Moo Kham Ae no',
               description:
-                'Ae no song such as story telling songs. Man or woman can perform in any occation. Artists narrated some story such as description of natural beauty, religious matter,memorise the past, chilhood time, some legendary story, mythology, agricultural activities, religious occassion etc.',
-              // icon: FingerPrintIcon,
-            },
-            
+                'Ae no song such as story telling songs. Man or woman can perform in any occation. Artists narrated some story such as description of natural beauty, religious matter,memorise the past, chilhood time, some legendary story, mythology, agricultural activities, religious occassion etc.',              
+            },            
       ]
     },  
   ]

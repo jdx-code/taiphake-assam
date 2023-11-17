@@ -6,8 +6,8 @@ const FeatureSectionWithLeftText = ( { aboutInfo } ) => {
           <div className="lg:pr-8 lg:pt-4">
             <div className="lg:max-w-lg">
               {/* <h2 className="text-base font-semibold leading-7 text-indigo-600">Deploy faster</h2> */}
-              <p className="mt-2 text-md sm:text-4xl font-bold tracking-tight text-gray-900">{aboutInfo[0].title}</p>
-              <p className="mt-6 text-sm sm:text-md text-justify leading-8 text-gray-600">
+              <p className="mt-2 text-md sm:text-4xl font-bold tracking-tight text-[#020202]">{aboutInfo[0].title}</p>
+              <p className="mt-6 text-sm sm:text-md text-justify leading-8 text-[#020202]">
                 {aboutInfo[0].description}
               </p>
               {aboutInfo[0].basicInfoLists ? 
@@ -22,7 +22,7 @@ const FeatureSectionWithLeftText = ( { aboutInfo } ) => {
                     ))}
               </div>
               : '' }
-              <button className='my-4 w-[25%] h-12 rounded-md bg-gray-900 text-white'>Read more</button>
+              <button className='my-4 w-[25%] h-12 rounded-md bg-[#7fb33f] text-[#fff]'>Read more</button>
             </div>
           </div>
           <img

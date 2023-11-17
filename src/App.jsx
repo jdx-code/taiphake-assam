@@ -12,7 +12,19 @@ import Contact from './pages/Contact'
 
 initFontAwesome();
 
-function App() {  
+function App() { 
+  
+  const location = useLocation();
+  useEffect(()=>
+  { 
+      if(location.pathname === '/'){        
+        document.getElementById('navbar').classList.add('navHome');   
+        document.getElementById('navbar').classList.remove('navOther');   
+      } else {
+        document.getElementById('navbar').classList.add('navOther');
+        document.getElementById('navbar').classList.remove('navHome');   
+      }
+  },[location])
 
   return (
     <>

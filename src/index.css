@@ -7,17 +7,50 @@ body{
     font-family: 'Noto Sans', sans-serif;
 }
 
-#navbar {
+.navHome {
     position: absolute;
     width: 100%;
-    z-index: 1; /* Ensure the Navbar is above the Hero section */
-    /* background: #191a2b; Remove the background color */
-    background: rgba(25, 26, 43, 0.2); /* Set a transparent background with some opacity */
+    z-index: 1; /* Ensure the Navbar is above the Hero section */    
+    background: rgba(25, 26, 43, 0); /* Set a transparent background with some opacity */    
 }
 
-#main{
+.navHome {
+  color: #fff;
+}
+
+.navHome .navbar-link:hover {
+  color: #7fb33f;
+}
+
+.navHome .navbar-link:active,
+.navHome .navbar-link:focus {
+  color: #dbc3c3; /* Adjust the color as needed */
+}
+
+.navOther .navbar-link:hover {
+  color: #7fb33f;
+}
+
+.navOther .navbar-link:active,
+.navOther .navbar-link:focus {
+  color: #5f8d28; /* Adjust the color as needed */
+}
+
+.navOther {
+  position: absolute;
+  width: 100%;
+  z-index: 1; /* Ensure the Navbar is above the Hero section */
+  background-image: linear-gradient(#b8e97b, #ffffff);
+}
+
+.navHome .menuItems{
   background-color: #fff;
 }
+
+/* #main{
+  background-color: #fff;
+} */
+
 .footerClass ul li, p{
     font-weight: normal;
 }
