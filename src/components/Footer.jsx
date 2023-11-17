@@ -4,11 +4,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Footer = () => {
     const currentDate = new Date();
     const currentYear = currentDate.getFullYear();
-
+    
     return(
-        <div className='footerClass bg-[#191a2b] text-white'>
+        // <div className='footerClass bg-gradient-to-t from-[#b9e769] from-10% via-[#efea5a] via-30% to-[#f1c453] to-90% text-[#772f1a]'>
+            <div className='footerClass bg-gradient-to-t from-[#9ece64] from-10% via-[#9ece64] via-30% to-[#9ece64] to-90% text-[#efgefg]'>
             <div className='w-full max-w-[95%] m-auto p-4 md:pt-8 grid md:grid-cols-6'>
-                <div className='w-full max-w-[95%] text-xs font-bold mb-8 col-span-4 md:border-r-2 md:border-blue-200'>
+                <div className='w-full max-w-[95%] text-xs font-bold mb-8 col-span-4 md:border-r-2 md:border-green-900'>
                     <p className='font-bold text-lg pb-3 underline'>Our Services</p>
                     <div className='grid grid-cols-6 '>                
                         <div className='col-span-3 sm:col-span-2'>

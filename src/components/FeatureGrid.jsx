@@ -22,7 +22,7 @@ const FeatureGrid = ( {features} ) => {
                 <dt className="text-base font-semibold leading-7 text-gray-900">
                   <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg">
                     {/* <CheckCircleIcon className='text-gray-400'/>   */}
-                    <FontAwesomeIcon icon={faCheckCircle} style={{ color: '#c0e' }}/>
+                    <FontAwesomeIcon icon={faCheckCircle} style={{ color: '#7fb33f' }}/>
                   </div>
                   {feature.name}
                 </dt>
