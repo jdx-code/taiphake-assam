@@ -4,14 +4,17 @@
 
 body{
     position: relative; 
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .navHome {
     position: absolute;
     width: 100%;
     z-index: 1; /* Ensure the Navbar is above the Hero section */    
-    background: rgba(25, 26, 43, 0); /* Set a transparent background with some opacity */    
+    /* background: rgba(25, 26, 43, 0); /* Set a transparent background with some opacity */    
+    /* background: rgba(59, 56, 56, 0.384); */
+    background-image: linear-gradient(to top, rgba(0,0,0,0), rgb(65, 26, 26));
+
 }
 
 .navHome {
@@ -56,8 +59,7 @@ body{
 }
 
 .slider-item {
-    position: relative;    
-    
+    position: relative;        
     text-align: center;
     height: 650px; /* Adjust the height as needed */
   }
@@ -76,5 +78,5 @@ body{
     width: 100%;
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
-    padding: 10px;
+    padding: 300px 250px 220px 250px;
   }

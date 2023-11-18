@@ -8,11 +8,11 @@ import { aboutNamphake, namphakeFeatures } from './Data'
 const AboutNamphake = () => { 
 
   return (
-    <>
+    <div className='pt-24'> 
       <FeatureSectionWithLeftText aboutInfo={aboutNamphake} /> 
       <FeatureWithMutipleDescription features={namphakeFeatures} />
       <Footer />
-    </>
+    </div>
   )
 }
 

@@ -47,7 +47,7 @@ const ImageSlider = () => {
 
   return (
     <div className=''>
-      <h2 className="mt-24 flex justify-center text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Tourists embracing their visit..</h2>
+      <h2 className="mt-24 flex justify-center text-2xl sm:text-3xl font-bold tracking-tight text-gray-900">Tourists embracing their visit..</h2>
       <div className='-mt-20 flex items-center flex-col justify-center h-screen'>      
         {images.map((image, index) => (
             <motion.img 

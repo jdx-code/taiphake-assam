@@ -1,17 +1,32 @@
 import React, { useState, Fragment, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { Menu, Transition } from '@headlessui/react'
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai';
-import Logo from '../assets/companyLogo.png'
+import HomePageLogo from '../assets/logo-home.png'
+import OtherPageLogo from '../assets/logo-other.png'
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
+let logo = HomePageLogo
+
 const Navbar = () =>{
 
     const [nav, setNav] = useState(false);
-    const [aboutActive, setAboutActive] = useState(false);
+    const [aboutActive, setAboutActive] = useState(false);   
+    const [logo, setLogo] = useState(HomePageLogo); // Use state to track the logo   
+
+    const location = useLocation();
+    
+    useEffect(() => {
+        // Update the logo only if necessary
+        if (location.pathname !== '/' && logo !== OtherPageLogo) {
+          setLogo(OtherPageLogo);
+        } else if (location.pathname === '/' && logo !== HomePageLogo) {
+          setLogo(HomePageLogo);
+        }
+      }, [location, logo]); // Add logo to dependencies
 
     const activeLink = "text-green-500 border-b-4 border-white p-2"
     
@@ -28,9 +43,9 @@ const Navbar = () =>{
     return(
         <div>
             <div id="navbar" className="flex justify-between items-center h-24 w-full mx-auto px-4">                
-                <div>
+                <div className="">
                     <NavLink to="/">
-                        <img className="w-[120px] my-8 sm:w-[100px] md:w-[100px] items-start" src={Logo} alt="/" />
+                        <img className="w-[120px] my-8 sm:w-[100px] md:w-[150px] items-start" src={logo} alt="/" />
                     </NavLink>                    
                 </div>               
                 
@@ -123,14 +138,14 @@ const Navbar = () =>{
                 <div onClick={handleNav} className="block md:hidden">
                     {nav ? <AiOutlineClose size={20}/>: <AiOutlineMenu size={20}/>}                
                 </div>
-                <div className={nav ? "fixed left-0 top-0 w-[85%] h-[96%] z-20 border-r border-r-gray-900 bg-[#1b0424] ease-in-out duration-500" : "fixed left-[-100%]"}>                    
-                    <img className="w-[90px] items-start" src={Logo} />
+                <div className={nav ? "fixed left-0 top-0 w-[85%] h-[100%] z-20 border-r border-r-gray-900 bg-[#f1e7f5] ease-in-out duration-500" : "fixed left-[-100%]"}>                    
+                    <img className="w-[90px] items-start ml-4 mt-4" src={OtherPageLogo} />
                     
-                    <ul className="uppercase p-4">
+                    <ul className="uppercase p-4 text-black">
                         <li className="p-4 border-b border-gray-600">
                             <NavLink
                                 to="/"
-                                onClick={handleNav}
+                                onClick={handleNav}          
                             >
                                 Home
                             </NavLink>

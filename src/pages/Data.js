@@ -72,6 +72,7 @@ export const namphakeFeatures = [
   export const songsAndPoetry = [
     {
       title: 'TAI PHAKE SONGS AND POETRY',
+      desc: 'The Tai phake people are jolly and lovers faies and festivals and Tai Phakes are not expectional. They are also a lively, marry making people. During the festivals the Phakes resort to merry making and fun with lively songs.',
       content: [
           {
               name: 'Moo Kham Sa Oui',

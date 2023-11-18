@@ -13,7 +13,9 @@ const Home = () => {
         <Hero />  
         <FeatureSectionWithLeftText aboutInfo={aboutTaiphake} />           
         <FeatureSectionWithRightText aboutInfo={aboutNamphake}/>
-        <GalleryLightbox />
+        <div className='py-12'>
+          <GalleryLightbox />
+        </div>        
         <Footer />
     </div>
   )

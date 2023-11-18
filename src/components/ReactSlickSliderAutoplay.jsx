@@ -7,6 +7,29 @@ import Image02 from '/hero/hero-02.jpg';
 import Image03 from '/hero/hero-03.jpg';
 import Image04 from '/hero/hero-04.jpg';
 
+const slideContents = [
+  {
+    heading: "Welcome to the Tai Phake Community",
+    subHeading: "Embark on a journey through the rich tapestry of Tai Phake heritage. Experience and immerse yourself in the traditions passed down through generations.",
+    image: Image01
+  },
+  {
+    heading: "Discover the Tai Phake Culture",
+    subHeading: "Immerse yourself in the vibrant traditions of the Tai Phake community. Witness their unique rituals, colorful festivals, and the harmonious coexistence with nature.",
+    image: Image02
+  },
+  {
+    heading: "Journey to Namphake Village",
+    subHeading: "Explore Namphake, the heart of the Tai Phake community. Visit the Namphake Buddhist Monastery, a spiritual center that echoes centuries of wisdom and peace.",
+    image: Image03
+  },
+  {
+    heading: "Preserving Tai Phake Heritage",
+    subHeading: "Join us in the mission to preserve and pass on the unique Tai Phake heritage to future generations. Explore the richness that shape their way of life.",
+    image: Image04
+  }  
+]
+
 export default class ReactSlickSliderAutoPlay extends Component {
   render() {
     const settings = {
@@ -25,42 +48,21 @@ export default class ReactSlickSliderAutoPlay extends Component {
     return (
       <div>
         <Slider {...settings}>
-          <div>
-            <div className="slider-item">
-              <img src={Image01} alt="Image 1" />
-              <div className="slider-text">
-                <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">Text for slide 1</h2>
-                <p className="mt-6 text-lg leading-8 text-gray-300">
-                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-                  fugiat veniam occaecat fugiat aliqua.
-                </p>
+
+          {slideContents.map(content => (
+            <div>
+              <div className="slider-item">
+                <img src={content.image} alt="Image 1" />
+                <div className="slider-text">
+                  <h2 className="text-2xl font-bold tracking-tight text-white sm:text-4xl">{content.heading}</h2>
+                  <p className="mt-6 text-lg leading-8 text-gray-300">
+                    {content.subHeading}
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div>
-            <div className="slider-item">
-              <img src={Image02} alt="Image 2" />
-              <div className="slider-text">
-                <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">Text for slide 2</h2>
-                <p className="mt-6 text-lg leading-8 text-gray-300">
-                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-                  fugiat veniam occaecat fugiat aliqua.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className="slider-item">
-              <img src={Image03} alt="Image 3" />
-              <div className="slider-text">Text for Image 3</div>
-            </div>
-          </div>
-          <div>
-            <div className="slider-item">
-              <img src={Image04} alt="Image 4" />
-              <div className="slider-text">Text for Image 4</div>
-            </div>
-          </div>
+          ))}     
+
         </Slider>
       </div>
     );
