@@ -9,12 +9,12 @@ import { aboutTaiphake, taiphakeFeatures, songsAndPoetry } from './Data'
 const AboutTaiphake = () => { 
 
   return (
-    <>
+    <div className='pt-24'> 
       <FeatureSectionWithLeftText aboutInfo={aboutTaiphake} /> 
       <FeatureWithMutipleDescription features={taiphakeFeatures} />
       <FeatureGrid features={songsAndPoetry} />
       <Footer />
-    </>
+    </div>
   )
 }
 

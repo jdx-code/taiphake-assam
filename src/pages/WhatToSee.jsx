@@ -7,11 +7,11 @@ import { whatToSee } from './Data'
 
 const WhatToSee = () => {
   return (
-    <>
+    <div className='pt-32'>
         <FeatureWithMultipleDescription features={whatToSee}/>    
         <ImageSlider />
         <Footer />          
-    </>
+    </div>
   )
 }
 

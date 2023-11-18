@@ -7,53 +7,53 @@ const Footer = () => {
     
     return(
         // <div className='footerClass bg-gradient-to-t from-[#b9e769] from-10% via-[#efea5a] via-30% to-[#f1c453] to-90% text-[#772f1a]'>
-            <div className='footerClass bg-gradient-to-t from-[#9ece64] from-10% via-[#9ece64] via-30% to-[#9ece64] to-90% text-[#efgefg]'>
+            <div className='footerClass bg-gradient-to-t from-[#9ece64] from-10% via-[#9ece64] via-30% to-[#fff] to-90% text-[#efgefg]'>
             <div className='w-full max-w-[95%] m-auto p-4 md:pt-8 grid md:grid-cols-6'>
                 <div className='w-full max-w-[95%] text-xs font-bold mb-8 col-span-4 md:border-r-2 md:border-green-900'>
-                    <p className='font-bold text-lg pb-3 underline'>Our Services</p>
+                    <p className='font-bold text-lg pb-3 underline'>Important Links</p>
                     <div className='grid grid-cols-6 '>                
                         <div className='col-span-3 sm:col-span-2'>
                             <ul>                            
                                 <li className='pb-2'>
-                                    <a href="/#services">Web Development</a>
+                                    <a href="/">Home</a>
                                 </li>
                                 <li className='pb-2'>
-                                    <a href="/#services">Mobile Application</a>
+                                    <a href="/what-to-see">What to see</a>
                                 </li>
                                 <li className='pb-2'>
-                                    <a href="/#services">Product Engineering</a>
+                                    <a href="/about-taiphake">Taiphake Community</a>
                                 </li>
                                 <li className='pb-2'>
-                                    <a href="/internship">Internships & Training</a>
-                                </li>
+                                    <a href="/about-namphake">Namphake Village</a>
+                                </li>                                
                             </ul>
                         </div>  
                         <div className='col-span-3 sm:col-span-2'>
                             <ul>     
                                 <li className='pb-2'>
-                                    <a href="/#services">UI/UX Design</a>
+                                    <a href="/literature">Literature</a>
                                 </li>                       
                                 <li className='pb-2'>
-                                    <a href="/#services">Cloud Services</a>
+                                    <a href="/#gallery">Gallery</a>
                                 </li>
                                 <li className='pb-2'>
-                                    <a href="/#services">IT Outsourcing</a>
+                                    <a href="/contact">Contact</a>
                                 </li>
                                 <li className='pb-2'>
-                                    <a href="/#services">Agile Consulting</a>
+                                    <a href="/#poetry">Songs & Poetry</a>
                                 </li>                                
                             </ul>
                         </div> 
                         <div className='col-span-6 sm:col-span-2'>
                             <ul>
                                 <li className='pb-2'>
-                                    <a href="/about">SEO & Digital Marketing</a>
+                                    <a href="https://en.wikipedia.org/wiki/Tai_Phake_people">Taiphake Wiki</a>
                                 </li> 
                                 <li className='pb-2'>
-                                    <a href="/about">IT Products & Services</a>
+                                    <a href="https://en.wikipedia.org/wiki/Theravada">Buddhism</a>
                                 </li>                            
                                 <li className='pb-2'>
-                                    <a href="/about">Maintenance & Support</a>
+                                    <a href="https://en.wikipedia.org/wiki/Phake_language">Language</a>
                                 </li>
                             </ul>
                         </div>             
@@ -63,11 +63,11 @@ const Footer = () => {
                 <div className='grid grid-cols-4 col-span-2 text-xs font-bold mb-8'>                    
                     <div className='col-span-3'>
                         <p className='font-bold text-lg pb-3 underline'>Reach Us</p>
-                        <p className='pb-1'>Beltola Tiniali</p>
-                        <p className='pb-1'>Guwahati-781028</p>
+                        <p className='pb-1'>Namphake Village</p>
+                        <p className='pb-1'>Dibrugarh</p>
                         <p className='pb-1'>Assam, India</p>
-                        <p className='pb-1'>+91-7578094093</p>
-                        <p className='pb-1'>info@zephyrsolutionsgroup.com</p>                    
+                        <p className='pb-1'>+91-xxxxxxxxxx</p>
+                        <p className='pb-1'>taiphakeassam@gmail.com</p>                    
                     </div>
                     <div className='col-span-1 grid justify-items-end items-center'>
                         <ul>
@@ -79,10 +79,7 @@ const Footer = () => {
                             </li>
                             <li className='pb-4'>
                                 <a href="https://www.facebook.com/zephyrsolutionsgroup"><FontAwesomeIcon icon={['fab', 'facebook']} size="lg"/></a>
-                            </li>
-                            <li className='pb-4'>
-                                <a href="https://github.com/zephyrsolutions"><FontAwesomeIcon icon={['fab', 'github']} size="lg"/></a>
-                            </li>
+                            </li>                            
                         </ul>
                     </div>                    
                 </div>                        

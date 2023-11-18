@@ -43,6 +43,7 @@ const GalleryLightbox = () => {
 
   return (
     <div>
+      <p className="mt-2 text-center my-8 text-2xl sm:text-3xl font-bold tracking-tight text-[#020202]">Taiphake Gallery</p>
       <CategoryFilter categories={categories} onCategoryChange={handleCategoryChange} />
       <Gallery photos={filteredPhotos} onClick={openLightbox} />
       <ModalGateway>
