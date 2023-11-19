@@ -1,15 +1,11 @@
-import HeroBg from '../assets/hero-bg.jpg'
 import ReactSlickSliderAutoPlay from './ReactSlickSliderAutoplay'
 
 export default function Hero() {
     return (
       <div className="relative isolate overflow-hidden py-0">
-        {/* <img
-          src={HeroBg}
-          alt=""
-          className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
-        /> */}
+
         <ReactSlickSliderAutoPlay />
+        
         <div
           className="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
           aria-hidden="true"

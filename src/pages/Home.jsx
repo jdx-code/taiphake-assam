@@ -3,7 +3,6 @@ import Hero from '../components/Hero'
 import Footer from '../components/Footer'
 import FeatureSectionWithLeftText from '../components/FeatureSectionWithLeftText'
 import FeatureSectionWithRightText from '../components/FeatureSectionWithRightText'
-import Try from '../components/Try'
 import GalleryLightbox from '../components/GalleryLightbox/GalleryLightbox'
 import { aboutTaiphake, aboutNamphake } from './Data'
 
