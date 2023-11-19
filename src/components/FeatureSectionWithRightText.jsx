@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom"
-import AboutImg from '../assets/about/8.jpg'
+import AboutImg from '/about/abt-namphake.jpg'
 
 const FeatureSectionWithRightText = ( { aboutInfo, features } ) => {
   return (

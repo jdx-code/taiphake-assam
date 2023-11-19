@@ -30,8 +30,8 @@ const slideContents = [
   }  
 ]
 
-export default class ReactSlickSliderAutoPlay extends Component {
-  render() {
+const ReactSlickSliderAutoPlay = () => {
+  
     const settings = {
       dots: true,
       infinite: true,
@@ -66,5 +66,7 @@ export default class ReactSlickSliderAutoPlay extends Component {
         </Slider>
       </div>
     );
-  }
+  
 }
+
+export default ReactSlickSliderAutoPlay
