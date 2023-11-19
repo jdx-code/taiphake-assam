@@ -1,7 +1,22 @@
+import React, { useState, useEffect, useRef } from 'react'
+import { motion, useAnimation, useInView } from 'framer-motion'
 import Footer from '../components/Footer';
 import Map from '/map/1.jpg'
 
 const Contact = () => {
+
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true })
+
+  const mainControls = useAnimation()
+
+  useEffect(() => {
+    if(isInView) {
+      // Fire the animation
+      mainControls.start("visible")
+
+    }
+  }, [isInView])
 
     function handleSubmit () {
         alert('Thank you! Your message has been submitted to our team!')        
@@ -9,29 +24,54 @@ const Contact = () => {
 
     return (
         <>        
-        <div className="relative isolate overflow-hidden px-6 py-36 sm:py-36 lg:overflow-visible lg:px-0">  
+        <div ref={ref} className="relative isolate overflow-hidden px-6 py-36 sm:py-36 lg:overflow-visible lg:px-0">  
         
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">         
   
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
-            <div className="lg:max-w-lg">
+            <motion.div
+              variants = {{
+              hidden: { opacity: 0, x: -95},
+              visible: { opacity: 1, x: 0},
+              }}
+              initial="hidden"
+              animate={mainControls}
+              transition={{ duration:0.5, delay: 0.25 }}
+             className="lg:max-w-lg">
                 {/* <p className="text-base font-semibold leading-7 text-indigo-600">Deploy faster</p> */}
                 <h1 className="mt-2 text-2xl sm:text-3xl font-bold tracking-tight text-gray-900">Reach Us..</h1>
                 <p className="mt-6 text-md sm:text-xl leading-8 text-gray-700">
                     Write us at <span className='font-bold italic'>taiphakeassam@gmail.com &nbsp;</span>
                     or fill in the contact form below.
                 </p>
-              </div>
-            </div>
+            </motion.div>
+          </div>
           </div>
   
-          <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">            
+          <motion.div 
+            variants = {{
+              hidden: { opacity: 0, x: 95},
+              visible: { opacity: 1, x: 0},
+            }}
+            initial="hidden"
+            animate={mainControls}
+            transition={{ duration:0.5, delay: 0.25 }}
+            className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">            
             <img 
                 src={Map}
             />
-          </div>
-          <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+          </motion.div>
+          <motion.div             
+            variants = {{
+              hidden: { opacity: 0, x: -95},
+              visible: { opacity: 1, x: 0},
+            }}
+            initial="hidden"
+            animate={mainControls}
+            transition={{ duration:0.5, delay: 0.25 }}
+            className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8"
+          >
             <div className="lg:pr-4">
               <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
                               
@@ -63,11 +103,11 @@ const Contact = () => {
                 <div class="mt-10 border-2 border-green-600 hover:border-green-700">
                     <button type="submit" class="block w-full rounded-md bg-yellow-100 px-3.5 py-2.5 text-center text-sm font-semibold text-green shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" onClick={handleSubmit}>Send Message</button>
                 </div>
-            </form>
+              </form>
   
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
       

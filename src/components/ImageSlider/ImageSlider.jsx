@@ -1,8 +1,21 @@
-import React, { useState, useEffect } from 'react'
-import { motion } from 'framer-motion'
+import React, { useState, useEffect, useRef } from 'react'
+import { motion, useAnimation, useInView } from 'framer-motion' 
 import { images }from './images'
 
 const ImageSlider = () => {
+
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true })
+
+  const mainControls = useAnimation()
+
+  useEffect(() => {
+    if(isInView) {
+      // Fire the animation
+      mainControls.start("visible")
+
+    }
+  }, [isInView])
 
   const [positionIndexes, setPositionIndexes] = useState([0, 1, 2, 3, 4])
 
@@ -46,8 +59,19 @@ const ImageSlider = () => {
   }
 
   return (
-    <div className=''>
-      <h2 className="mt-24 flex justify-center text-2xl sm:text-3xl font-bold tracking-tight text-gray-900">Tourists embracing their visit..</h2>
+    <div ref={ref} className=''>
+      <motion.h2
+        variants = {{
+          hidden: { opacity: 0, y: 95},
+          visible: { opacity: 1, y: 0},
+        }}
+        initial="hidden"
+        animate={mainControls}
+        transition={{ duration:0.5, delay: 0.25 }}
+        className="mt-24 flex justify-center text-2xl sm:text-3xl font-bold tracking-tight text-gray-900"
+      >
+        Tourists embracing their visit..
+      </motion.h2>
       <div className='-mt-20 flex items-center flex-col justify-center h-screen'>      
         {images.map((image, index) => (
             <motion.img 
