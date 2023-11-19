@@ -2,8 +2,8 @@ import React, { useState, Fragment, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { Menu, Transition } from '@headlessui/react'
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai';
-import HomePageLogo from '../assets/logo-home.png'
-import OtherPageLogo from '../assets/logo-other.png'
+import HomePageLogo from '/logo/logo-home.png'
+import OtherPageLogo from '/logo/logo-other.png'
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')

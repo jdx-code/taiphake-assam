@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Footer = () => {
@@ -85,7 +86,16 @@ const Footer = () => {
                 </div>                        
             </div>        
             <div className='w-full'>
-                <p className='text-center pb-4 text-sm'>Zephyr Solutions &#169; {currentYear} | All rights reserved. </p>                           
+                <p className='text-center pb-4 text-sm'>
+                    <NavLink
+                        to="https://www.zephyrsolutionsgroup.com/"
+                        target="_blank"
+                        className='hover:text-green-700'
+                    >
+                        Zephyr Solutions
+                    </NavLink>
+                    &#169; {currentYear} | All rights reserved. \
+                </p>                           
             </div>    
             
         </div>        

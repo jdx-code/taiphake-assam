@@ -53,8 +53,8 @@ export default class ReactSlickSliderAutoPlay extends Component {
             <div>
               <div className="slider-item">
                 <img src={content.image} alt="Image 1" />
-                <div className="slider-text">
-                  <h2 className="text-2xl font-bold tracking-tight text-white sm:text-4xl">{content.heading}</h2>
+                <div className="slider-text pt-[300px] pr-[25px] pb-[220px] pl-[25px] sm:pt-[300px] sm:pr-[100px] sm:pb-[220px] sm:pl-[100px] md:pt-[300px] md:pr-[100px] md:pb-[220px] md:pl-[100px] lg:pt-[300px] lg:pr-[250px] lg:pb-[220px] lg:pl-[250px]">
+                  <h2 className="text-2xl font-bold tracking-tight text-white sm:text-3xl lg:text-4xl">{content.heading}</h2>
                   <p className="mt-6 text-lg leading-8 text-gray-300">
                     {content.subHeading}
                   </p>
