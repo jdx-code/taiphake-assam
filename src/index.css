@@ -77,6 +77,5 @@ body{
     transform: translateY(-50%);
     width: 100%;
     background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    padding: 300px 250px 220px 250px;
+    color: #fff;    
   }
